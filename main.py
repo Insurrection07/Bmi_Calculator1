@@ -1,12 +1,17 @@
-name = "Avaneesh"
-height_m = 1778
-weight_kg = 70
-bmi = weight_kg / (height_m * height_m)
-print("bmi: ")
-print(bmi)
-if bmi < 25:
-    print(name)
-    print("is not overweight")
-else:
-    print(name)
-    print("is overweight")
+name = input("Enter your name: ")
+height = float(input("Enter your height in centimeteres: "))
+weight = float(input("Enter your weight in Kg: "))
+height = height / 100
+BMI = weight / (height * height)
+print("Your BMI is: ", BMI)
+if BMI > 0:
+    if BMI <= 16:
+        print("You are severely underweight")
+    elif BMI <= 18.5:
+        print("You are underweight")
+    elif BMI <= 25:
+        print("You are healthy")
+    elif BMI <= 30:
+        print("You are severly overweight")
+    else:
+        ("I am too smart for you so enter the correct values")
